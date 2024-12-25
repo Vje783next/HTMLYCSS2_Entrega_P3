@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Juan Estevez">
+    <meta name="description" content="Entrega P2 de la asignatura HTML y CSS2 del Master Universitario en Desarrollo de sitios y aplicaciones web de la UOC">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Secure Digital | Speakers</title>
+    <link rel="stylesheet" href="./assets/styles/main.scss">
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </head>
+  <body class="font-verdana text-black font-sans m-0 p-0 box-border">
+    <include src="./views/header.html"></include>
+    <main class="bg-gradient-to-r from-purple-500 to-pink-500 pb-12.5 main">
+      <article class="main__article">
+        <h2 class="w-full p-5 mb-5 text-center rounded-md mb-12.5 text-4xl text-black font-bold bg-green-500 article__title md:text-5xl">Speakers</h2>
+
+        <!--Bootstrap Component - Breadcrumb-->
+        <div class="w-11/12 mx-auto my-4 bg-purple">
+          <nav aria-label="breadcrumb">
+            <ol class="bg-indigo-600 p-2.5 text-2xl breadcrumb fs-5">
+              <li class="breadcrumb-item"><a class="text-white text-underline" href="index.html"><i class="fa-solid fa-house px-2.5"></i>Home</a></li>
+              <li class="breadcrumb-item active text-white" aria-current="page">Speakers</li>
+            </ol>
+          </nav>
+        </div>
+        <!------------------------------------>
+
+        <div class="flex flex-col gap-7.5 p-5 article__cards">
+          <div class="p-5 text-black bg-white rounded-sm card">
+            <img class="w-80 h-80 mx-auto mb-10 object-cover rounded-full card__image" src="./assets/images/speaker1.jpg" alt="Carlos Fernández hablando en una conferencia sobre ciberseguridad">
+            <h3 class="w-full p-5 mb-5 text-center rounded-sm text-2xl font-bold bg-green-500 card__title">Carlos Fernandez</h3>
+            <p class="text-2xl card__text">
+              Director de ciberseguridad en una empresa global de servicios financieros. Cuenta con más de 20 años de experiencia en gestión de riesgos y compliance.
+            </p>
+          </div>
+          <div class="p-5 text-black bg-white rounded-sm card">
+            <img class="w-80 h-80 mx-auto mb-10 object-cover rounded-full card__image" src="./assets/images/speaker2.jpg" alt="Laura Torres presentando en un evento sobre ciberseguridad">
+            <h3 class="w-full p-5 mb-5 text-center rounded-sm text-2xl font-bold bg-green-500 card__title">Laura Torres</h3>
+            <p class="text-2xl card__text">
+              Especialista en ciberseguridad con más de 15 años de experiencia en la protección de infraestructuras críticas. Consultora en grandes empresas tecnológicas y actualmente lidera el equipo de respuesta a incidentes en una multinacional
+            </p>
+          </div>
+          <div class="p-5 text-black bg-white rounded-sm card">
+            <img class="w-80 h-80 mx-auto mb-10 object-cover rounded-full card__image" src="./assets/images/speaker3.jpg" alt="Javier Gómez dando una charla sobre hacking ético">
+            <h3 class="w-full p-5 mb-5 text-center rounded-sm text-2xl font-bold bg-green-500 card__title">Javier Gómez</h3>
+            <p class="text-2xl card__text">Consultor en seguridad informática especializado en hacking ético. Ha liderado múltiples pruebas de penetración para identificar vulnerabilidades en sistemas corporativos.</p>
+          </div>
+          <div class="p-5 text-black bg-white rounded-sm card">
+            <img class="w-80 h-80 mx-auto mb-10 object-cover rounded-full card__image" src="./assets/images/speaker4.jpg" alt="Miguel Sánchez exponiendo en un evento académico sobre ciberseguridad">
+            <h3 class="w-full p-5 mb-5 text-center rounded-sm text-2xl font-bold bg-green-500 card__title">Miguel Sanchez</h3>
+            <p class="text-2xl card__text">
+              Profesor universitario y autor de varios libros sobre seguridad en redes. Ha colaborado en proyectos internacionales para mejorar la ciberseguridad en entornos académicos y corporativos.
+            </p>
+          </div>
+          <div class="p-5 text-black bg-white rounded-sm card">
+            <img class="w-80 h-80 mx-auto mb-10 object-cover rounded-full card__image" src="./assets/images/speaker5.jpg" alt="Ana Beltrán explicando sobre políticas de privacidad en una conferencia">
+            <h3 class="w-full p-5 mb-5 text-center text-4xl rounded-sm text-2xl font-bold bg-green-500 card__title">Ana Beltrán</h3>
+            <p class="text-2xl card__text">
+              Experta en privacidad y protección de datos. Ha asesorado a organizaciones en la implementación de políticas de privacidad y cumplimiento del <abbr title="Reglamento General de Protección de Datos">RGPD</abbr>.
+            </p>
+          </div>
+          <div class="p-5 text-black bg-white rounded-sm card">
+            <img class="w-80 h-80 mx-auto mb-10 object-cover rounded-full card__image" src="./assets/images/speaker6.jpg" alt="Francisco Martínez discutiendo sobre análisis de malware en un taller">
+            <h3 class="w-full p-5 mb-5 text-center rounded-sm text-2xl font-bold bg-green-500 card__title">Francisco Martinez</h3>
+            <p class="text-2xl card__text">
+              Investigador en el campo de la seguridad informática y experta en análisis de <em>malware</em>. Ha desarrollado herramientas innovadoras para la detección de amenazas en redes empresariales.
+            </p>
+          </div>
+        </div>
+      </article>
+    </main>
+    <include src="./views/footer.html"></include>
+  </body>
+</html>
