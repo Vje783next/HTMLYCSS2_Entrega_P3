@@ -1,46 +1,43 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Juan Estevez">
-    <meta name="description" content="Entrega P2 de la asignatura HTML y CSS2 del Master Universitario en Desarrollo de sitios y aplicaciones web de la UOC">
+    <meta name="description" content="Entrega P3 de la asignatura HTML y CSS2 del Master Universitario en Desarrollo de sitios y aplicaciones web de la UOC">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Secure Digital | Blog</title>
+    <title>Secure Digital | Index</title>
     <link rel="stylesheet" href="./assets/styles/main.scss">
     <script type="module" src="./assets/scripts/main.js"></script>
   </head>
-  <body class="font-verdana text-black font-sans m-0 p-0 box-border">
+  <body class="max-w-[100dvw] min-h-[100dvh] font-verdana text-dark leading-[1.6]">
+    
     <include src="./views/header.html"></include>
-    <main class="bg-gradient-to-r from-cyan-500 to-blue-500 pb-50 main">
-      <article class="main__article">
-        <h2 class="w-full p-5 mb-5 text-center rounded-md mb-12.5 text-4xl text-black font-bold bg-green-500 article__title md:text-5xl">Blog</h2>
-        <section class="mx-auto text-xl md:w-80 article__blog">
-          <h2 class="mb-10 p-5 m-5 text-4xl text-center bg-white md:w-85 md:mx-auto blog__title">
+
+    <main class="bg-gradient-to-r from-primary to-secondary pb-[50px]">
+      <article>
+        <h2 class="main__title">Blog</h2>
+        <section class="mx-auto text-xl 
+                        md:w-[80%]">
+          <h3 class="mb-10 p-5 m-5 text-2.8 leading-[1.3] text-center bg-white/80
+                     md:w-[85%] md:mx-auto">
             Jornadas de Seguridad Informática y Cibernética: Fortaleciendo la
             Defensa Digital
-          </h2>
+          </h3>
 
-          <!--Bootstrap Component - Breadcrumb-->
-          <div class="w-11/12 mx-auto my-4 bg-purple">
-            <nav aria-label="breadcrumb">
-              <ol class="bg-indigo-600 p-2.5 text-2xl breadcrumb fs-5">
-                <li class="breadcrumb-item"><a class="text-white text-underline" href="index.html"><i class="fa-solid fa-house px-2.5"></i>Home</a></li>
-                <li class="breadcrumb-item active text-white" aria-current="page">Blog</li>
-              </ol>
-            </nav>
-          </div>
+          <include src="./views/breadcrumb.html" locals='{"page": "blog"}'></include>
 
-          <div class="bg-white p-5 m-5 rounded-md md:w-80 blog__container">
+          <div class="bg-white/80 p-5 m-5 rounded-[5px] 
+                      md:w-[80%] md:mx-auto">
             <figure>
               <img
-                class="block max-w-full rounded-md blog__image"
+                class="block max-w-full rounded-[5px]"
                 src="./assets/images/pexels-bertellifotografia-3321793.jpg"
                 alt="Hombre sentado hablando en una conferencia con asistentes"
               />
               <figcaption class="text-center">Ponente durante una charla compartiendo sus ideas en un evento</figcaption>
             </figure>
-            <blockquote class="ml-12.5 text-2xl border-l-4 border-green-500 p-5 m-5 xl:float-left xl:w-40 xl:pr-5 xl:my-5 xl:3xl italic blog__blockqoute">
-              <p class="text-2xl blockquote__text">
+            <blockquote class="blockquote">
+              <p class="text-2xl">
                 <em
                   >"La ciberseguridad no es solo una cuestión tecnológica, sino
                   un compromiso constante de toda la organización para proteger
@@ -51,7 +48,8 @@
                 >
               </p>
             </blockquote>
-            <p class="mb-4 xl:text-2xl blog__text">
+            <p class="mb-4 
+                      xl:text-2xl">
               En un mundo cada vez más digitalizado, la seguridad informática y
               cibernética se han convertido en pilares fundamentales para
               proteger a las organizaciones y a los individuos frente a las
@@ -64,7 +62,8 @@
               fraude digital y las vulnerabilidades en infraestructuras
               críticas.
             </p>
-            <p class="mb-4 xl:text-2xl  blog__text">
+            <p class="mb-4 
+                      xl:text-1.6">
               Una de las claves de estas jornadas es la colaboración entre
               distintos sectores. Los asistentes tienen la oportunidad de
               aprender de líderes de la industria, como Laura Torres, experta en
@@ -77,17 +76,18 @@
               gubernamental.
             </p>
           </div>
-          <div class="bg-white p-5 m-5 md:w-80 blog__container">
+          <div class="bg-white/80 p-5 m-5 rounded-[5px] 
+                      md:w-[80%] md:mx-auto">
             <figure>
               <img
-                class="block max-w-full rounded-md blog__image"
+                class="block max-w-full rounded-[5px]"
                 src="./assets/images/pexels-jonaskakaroto-2914419.jpg"
                 alt="Auditorio vacio con filas de asientos naranjas"
               />
               <figcaption class="text-center">Auditorio con filas de asientos para eventos o conferencias.</figcaption>
             </figure>
-            <blockquote class="p-5 m-5 xl:float-left xl:w-40 xl:pr-5 xl:my-5 xl:3xl italic border-l-4 border-green-500 blog__blockqoute">
-              <p class="text-2xl blockquote__text">
+            <blockquote class="blockqoute">
+              <p class="text-2xl">
                 <em
                   >"En un entorno digital en constante evolución, la capacidad
                   de adaptarse rápidamente a nuevas amenazas es clave para
@@ -98,7 +98,7 @@
                 >
               </p>
             </blockquote>
-            <p class="mb-4 xl:text-2xl blog__text">
+            <p class="mb-4 xl:text-2xl">
               Además, el evento no solo se centra en las amenazas actuales, sino
               también en las proyecciones futuras. Ponentes como Elena Martínez
               destacan la importancia de estar un paso adelante. “El panorama de
@@ -108,7 +108,7 @@
               promueven la innovación tecnológica, con demostraciones prácticas
               de herramientas de ciberseguridad y estrategias de protección.
             </p>
-            <p class="mb-4 xl:text-2xl blog__text">
+            <p class="mb-4 xl:text-2xl">
               Finalmente, las Jornadas de Seguridad Informática y Cibernética
               son un espacio para fomentar el networking y la creación de
               sinergias. Profesionales de distintas disciplinas comparten
@@ -120,32 +120,38 @@
             </p>
           </div>
 
-          <!--Bootstrap Component - Collapse-->+
-          <div class="bg-green p-5">
-            <p class="flex gap-1 justify-center text-center">
-              <button class="bg-green-500 rounded-md p-5  w-4/5 py-4 fs-4 font-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <!--Bootstrap Component - Collapse-->
+          <div class="p-5">
+            <p class="flex gap-1 justify-center text-center mb-10">
+              <button class="bg-button rounded-[5px] p-5 w-4/5 py-4 fs-4 font-bold hover:bg-highlight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                 Principales temas abordados en las Jornadas de Seguridad
                 Informática y Cibernética:           
               </button>
             </p>
-            <div class="collapse bg-light" id="collapseExample">
+            <div class=" bg-white/80" id="">
                 <ul class="p-5 blog__list">
-                  <li class="block py-5 border xl:text-xl xl:border blog__item">
+                  <li class="block py-5 border-b border-b-dark
+                             xl:text-xl">
                     Protección de infraestructuras críticas: Estrategias para defender sistemas esenciales frente a amenazas cibernéticas.
                   </li>
-                  <li class="block py-5 border xl:text-xl xl:border-b-5 blog__item">
+                  <li class="block py-5 border-b border-b-dark
+                             xl:text-xl">
                     Hacking ético: Cómo identificar vulnerabilidades a través de pruebas de penetración.
                   </li>
-                  <li class="block py-5 border xl:text-xl xl:border-b-5 blog__item">
+                  <li class="block py-5 border-b border-b-dark 
+                             xl:text-xl">
                     Análisis de malware: Técnicas avanzadas para detectar y neutralizar software malicioso.
                   </li>
-                  <li class="block py-5 border xl:text-xl xl:border-b-5 blog__item">
+                  <li class="block py-5 border-b border-b-dark 
+                             xl:text-xl">
                     Gestión del riesgo cibernético: Metodologías para evaluar y mitigar riesgos en entornos corporativos.
                   </li>
-                  <li class="block py-5 border xl:text-xl xl:border-b-5  blog__item">
+                  <li class="block py-5 border-b border-b-dark 
+                             xl:text-xl">
                     Privacidad y protección de datos: Implementación de políticas de cumplimiento con el RGPD y otras normativas.
                   </li>
-                  <li class="block py-5 border xl:text-xl xl:border-b-5 blog__item">
+                  <li class="block py-5 border-b border-b-dark 
+                             xl:text-xl">
                     Ciberseguridad e inteligencia artificial: Uso de tecnologías emergentes para anticipar y prevenir ciberataques.
                   </li>
                 </ul>            

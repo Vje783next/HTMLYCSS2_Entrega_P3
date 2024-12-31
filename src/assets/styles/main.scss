@@ -10,9 +10,6 @@
  * Import variables
  */
 
-
-@import "variables";
-
 /**
  * Import npm dependencies
  * see: https://v2.parceljs.org/features/module-resolution/
@@ -27,15 +24,34 @@
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/home";
-
 /**
  * Do NOT include anything else in this file!
  */
 
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
- 
- 
 
+@tailwind utilities;
 
- @tailwind utilities;
+@layer base {
+  * {
+    @apply box-border p-0 m-0;
+  }
+}
+
+@layer utilities {
+  .bg-brand-gradient {
+    background-image: linear-gradient(#3490dc, #6574cd);
+  }
+}
+
+@layer components {
+  .blockquote {
+    @apply ml-12 text-2xl border-l-4 border-highlight p-5 m-5 italic
+           xl:float-left xl:w-40 xl:pr-5 xl:my-5 xl:text-1.7;
+  }
+
+  .main__title {
+    @apply w-full p-5 mb-12 text-center font-bold rounded-[5px] text-2 bg-button 
+           md:text-5xl; 
+  }
+}
