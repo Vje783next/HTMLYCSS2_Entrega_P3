@@ -14,7 +14,7 @@
   </head>
   <body class="max-w-[100dvw] min-h-[100dvh] font-verdana text-dark leading-[1.6]">
     <include src="./views/header.html"></include>
-    <main class="bg-gradient-to-r from-primary to-secondary pb-[50px]">
+    <main class="bg-gradient-radial from-primary to-secondary pb-[50px]">
       <article class="main__article">
         <h2
           class="main__title"
@@ -22,10 +22,10 @@
           Speakers
         </h2>
 
-        <include src="./views/breadcrumb.html" locals='{"page": "speakers"}'></include>
+        <include src="./views/breadcrumb.html" locals='{"page": "Speakers"}'></include>
 
         <div class="flex flex-col gap-[30px] p-5 
-                    md:flex-row md:flex-wrap md:justify-center">
+                    tablet:flex-row tablet:flex-wrap tablet:justify-center">
         <include
             src="./views/card.html"
             locals='{

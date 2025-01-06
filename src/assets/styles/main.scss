@@ -39,19 +39,21 @@
 }
 
 @layer utilities {
-  .bg-brand-gradient {
-    background-image: linear-gradient(#3490dc, #6574cd);
-  }
 }
 
 @layer components {
   .blockquote {
-    @apply ml-12 text-2xl border-l-4 border-highlight p-5 m-5 italic
-           xl:float-left xl:w-40 xl:pr-5 xl:my-5 xl:text-1.7;
+    @apply ml-5 text-2xl leading-9 border-l-4 border-highlight p-5 m-5 italic
+           laptop:float-left laptop:w-[40%] laptop:my-5 laptop:text-1.7;
   }
 
   .main__title {
     @apply w-full p-5 mb-12 text-center font-bold rounded-[5px] text-2 bg-button 
-           md:text-5xl; 
+           tablet:text-5xl; 
+  }
+
+  .content-div {
+    @apply bg-white/80 p-5 m-5 rounded-[5px] 
+             tablet:mx-auto;
   }
 }
