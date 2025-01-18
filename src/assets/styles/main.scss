@@ -44,7 +44,7 @@
 @layer components {
   .blockquote {
     @apply ml-5 text-2xl leading-9 border-l-4 border-highlight p-5 m-5 italic
-           laptop:float-left laptop:w-[40%] laptop:my-5 laptop:text-1.7;
+           laptop:float-left laptop:w-[40%] laptop:my-5 laptop:text-1.5;
   }
 
   .main__title {
