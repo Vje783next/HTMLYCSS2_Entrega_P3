@@ -15,76 +15,73 @@
   <body class="max-w-[100dvw] min-h-[100dvh] font-verdana text-dark leading-[1.6]">
     <include src="./views/header.html"></include>
     <main class="bg-gradient-radial from-primary to-secondary pb-[50px]">
-      <article class="main__article">
-        <h2
-          class="main__title"
-        >
-          Speakers
-        </h2>
-        <include src="./views/breadcrumb.html" locals='{"page": "Speakers"}'></include>
-        <div class="flex flex-col gap-[30px] p-5 
-                    tablet:flex-row tablet:flex-wrap tablet:justify-center">
-        <include
-            src="./views/card.html"
-            locals='{
-            "name": "Carlos Fernandez",
-            "img": "./assets/images/speaker1.jpg",
-            "text": "Director de ciberseguridad en una empresa global de servicios financieros. Cuenta con más de 20 años de experiencia en gestión de riesgos y compliance.",
-            "alt": "Carlos Fernández hablando en una conferencia sobre ciberseguridad"
-            }'
-          >
-          </include>
+      <article class="article">
+        <h2 class="main__title">Speakers</h2>
+        <section class="mx-auto w-[95%]">
+          <include src="./views/breadcrumb.html" locals='{"page": "Speakers"}'></include>
+          <section class="flex flex-wrap items-stretch justify-center gap-[30px] p-5">
           <include
-            src="./views/card.html"
-            locals='{
-            "name": "Laura Torres",
-            "img": "./assets/images/speaker2.jpg",
-            "text": "Especialista en ciberseguridad con más de 15 años de experiencia en la protección de infraestructuras críticas. Consultora en grandes empresas tecnológicas y actualmente lidera el equipo de respuesta a incidentes en una multinacional",
-            "alt": "Laura Torres presentando en un evento sobre ciberseguridad"
-            }'
-          >
-          </include>
-          <include
-            src="./views/card.html"
-            locals='{
-            "name": "Javier Gomez",
-            "img": "./assets/images/speaker3.jpg",
-            "text": "Consultor en seguridad informática especializado en hacking ético. Ha liderado múltiples pruebas de penetración para identificar vulnerabilidades en sistemas corporativos.",
-            "alt": "Javier Gómez dando una charla sobre hacking ético"
-            }'
-          >
-          </include>
-          <include
-            src="./views/card.html"
-            locals='{
-            "name": "Miguel Sanchez",
-            "img": "./assets/images/speaker4.jpg",
-            "text": "Profesor universitario y autor de varios libros sobre seguridad en redes. Ha colaborado en proyectos internacionales para mejorar la ciberseguridad en entornos académicos y corporativos.",
-            "alt": "Miguel Sánchez exponiendo en un evento académico sobre ciberseguridad"
-            }'
-          >
-          </include>
-          <include
-            src="./views/card.html"
-            locals='{
-            "name": "Ana Beltran",
-            "img": "./assets/images/speaker5.jpg",
-            "text": "Experta en privacidad y protección de datos. Ha asesorado a organizaciones en la implementación de políticas de privacidad y cumplimiento del RGPD",
-            "alt": "Ana Beltrán explicando sobre políticas de privacidad en una conferencia"
-            }'
-          >
-          </include>
-          <include
-            src="./views/card.html"
-            locals='{
-            "name": "Francisco Martinez",
-            "img": "./assets/images/speaker6.jpg",
-            "text": "Investigador en el campo de la seguridad informática y experta en análisis de malware. Ha desarrollado herramientas innovadoras para la detección de amenazas en redes empresariales.",
-            "alt": "Francisco Martínez discutiendo sobre análisis de malware en un taller"
-            }'
-          >
-          </include>
-        </div>
+              src="./views/card.html"
+              locals='{
+              "name": "Carlos Fernandez",
+              "img": "./assets/images/speaker1.jpg",
+              "text": "Director de ciberseguridad en una empresa global de servicios financieros. Cuenta con más de 20 años de experiencia en gestión de riesgos y compliance.",
+              "alt": "Carlos Fernández hablando en una conferencia sobre ciberseguridad"
+              }'
+            >
+            </include>
+            <include
+              src="./views/card.html"
+              locals='{
+              "name": "Laura Torres",
+              "img": "./assets/images/speaker2.jpg",
+              "text": "Especialista en ciberseguridad con más de 15 años de experiencia en la protección de infraestructuras críticas. Consultora en grandes empresas tecnológicas y actualmente lidera el equipo de respuesta a incidentes en una multinacional",
+              "alt": "Laura Torres presentando en un evento sobre ciberseguridad"
+              }'
+            >
+            </include>
+            <include
+              src="./views/card.html"
+              locals='{
+              "name": "Javier Gomez",
+              "img": "./assets/images/speaker3.jpg",
+              "text": "Consultor en seguridad informática especializado en hacking ético. Ha liderado múltiples pruebas de penetración para identificar vulnerabilidades en sistemas corporativos.",
+              "alt": "Javier Gómez dando una charla sobre hacking ético"
+              }'
+            >
+            </include>
+            <include
+              src="./views/card.html"
+              locals='{
+              "name": "Miguel Sanchez",
+              "img": "./assets/images/speaker4.jpg",
+              "text": "Profesor universitario y autor de varios libros sobre seguridad en redes. Ha colaborado en proyectos internacionales para mejorar la ciberseguridad en entornos académicos y corporativos.",
+              "alt": "Miguel Sánchez exponiendo en un evento académico sobre ciberseguridad"
+              }'
+            >
+            </include>
+            <include
+              src="./views/card.html"
+              locals='{
+              "name": "Ana Beltran",
+              "img": "./assets/images/speaker5.jpg",
+              "text": "Experta en privacidad y protección de datos. Ha asesorado a organizaciones en la implementación de políticas de privacidad y cumplimiento del RGPD",
+              "alt": "Ana Beltrán explicando sobre políticas de privacidad en una conferencia"
+              }'
+            >
+            </include>
+            <include
+              src="./views/card.html"
+              locals='{
+              "name": "Francisco Martinez",
+              "img": "./assets/images/speaker6.jpg",
+              "text": "Investigador en el campo de la seguridad informática y experta en análisis de malware. Ha desarrollado herramientas innovadoras para la detección de amenazas en redes empresariales.",
+              "alt": "Francisco Martínez discutiendo sobre análisis de malware en un taller"
+              }'
+            >
+            </include>
+          </section>
+        </section>
       </article>
     </main>
     <include src="./views/footer.html"></include>
